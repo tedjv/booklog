@@ -1,0 +1,1 @@
+A simple book log that allows users to keep track of books they've read.
