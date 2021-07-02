@@ -24,6 +24,7 @@ form {
 #book-log td, #book-log th {
     border: 1px solid #ddd;
     padding: 8px;
+    text-align: center;
   }
 
 #book-log tr:nth-child(odd){background-color:  white; }
@@ -34,3 +35,14 @@ input {
     margin: .75rem 1rem;
 }
 
+#read-status {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+#delete-button {
+    height: 25px;
+    
+ 
+}
