@@ -5,6 +5,6 @@ form {
     display: inline-block;
 }
 
-#title, #author, #date, button {
+#title, #author, #date, input {
     margin: .75rem .5rem;
 }
