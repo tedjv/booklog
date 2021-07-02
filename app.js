@@ -28,7 +28,8 @@ function addBook(book) {
     row.innerHTML = `
     <td>${book.title}</>
     <td>${book.author}</>
-    <td>${book.rating}</>`;
+    <td>${book.rating}</>
+    <td><a href=''>Delete<a></td> `;
 
     list.appendChild(row);
 }
