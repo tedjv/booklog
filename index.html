@@ -31,24 +31,23 @@
                 class="form-control">
             </div>
             <div class="form-group">
-                <label for="rating">Date: </label>
-                <input type="text" id="date"
+                <label for="rating">Rating: </label>
+                <input type="text" id="rating"
                 class="form-control">
             </div>
             <div>
-                <button type="button">Add book</button> 
+                <input type="submit" value="Add book">
             </div>
-
+        </form>
         <table style="width:100%">
         <thead>
             <tr>
                 <th class="title">Title</th>
                 <th>Author</th>
-                <th>Date Completed</th>
+                <th>Rating</th>
             </tr>
         </thead>
-        
-        
+        <tbody id="book-list"></tbody>
         </table>
     </div>
         <script src="app.js" async defer></script>
