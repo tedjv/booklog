@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BookLog</title>
+        <title>Book Log</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -17,7 +17,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="container">
-        <h1>BookLog</h1>
+        <h1>Book Log</h1>
         
         <form id="book-form">
             <div class="form-group">
@@ -45,10 +45,47 @@
                 <th class="title">Title</th>
                 <th class="author">Author</th>
                 <th class="rating">Rating</th>
-                <th class="delete">Remove Book</th> 
+                <th>Read</th>
+                <th>Remove Book</th> 
             </tr>
         </thead>
-        <tbody id="book-list"></tbody>
+        <tbody id="book-list">
+            <tr>
+                <td>Odyssey</>
+                    <td>Homer</>
+                    <td>5/5</>
+                    <td><input type="checkbox" id="read-status" name="completed" value="read">
+                    <label for="completed"></label>
+                    <td><input type="button" id="delete-button" value="Remove" onclick="DeleteRowFunction()"></td>
+            </tr>
+
+            <tr>
+                <td>The Inferno</>
+                    <td>Dante Alghieri</>
+                    <td>5/5</>
+                    <td><input type="checkbox" id="read-status" name="completed" value="read">
+                    <label for="completed"></label>
+                    <td><input type="button" id="delete-button" value="Remove" onclick="DeleteRowFunction()"></td>
+            </tr>
+
+            <tr>
+                <td>War and Peace</>
+                    <td>Leo Tolstoy</>
+                    <td>5/5</>
+                    <td><input type="checkbox" id="read-status" name="completed" value="read">
+                    <label for="completed"></label>
+                    <td><input type="button" id="delete-button" value="Remove" onclick="DeleteRowFunction()"></td>
+            </tr>
+
+            <tr>
+                <td>The Brothers Karamazov</>
+                    <td>Fyodor Dostoyevsky</>
+                    <td>5/5</>
+                    <td><input type="checkbox" id="read-status" name="completed" value="read">
+                    <label for="completed"></label>
+                    <td><input type="button" id="delete-button" value="Remove" onclick="DeleteRowFunction()"></td>
+            </tr>
+        </tbody>
         </table>
     </div>
         <script src="app.js" async defer></script>
