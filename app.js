@@ -1,16 +1,5 @@
 // Contain books
-let myLibrary = [
-    {
-        title: 'The Odyssey',
-        author: 'Homer',
-        rating: '5/5'
-    },
-    {
-        title: 'The Inferno',
-        author: 'Dante',
-        rating: 'Cold!'
-
-    }];
+let myLibrary = [];
 
 
 // Book constructor
@@ -29,7 +18,9 @@ function addBook(book) {
     <td>${book.title}</>
     <td>${book.author}</>
     <td>${book.rating}</>
-    <td><a href=''>Delete<a></td> `;
+    <td><input type="checkbox" id="read-status" name="completed" value="read">
+    <label for="completed"></label>
+    <td><input type="button" id="delete-button" value="Remove" onclick="DeleteRowFunction()"></td>`;
 
     list.appendChild(row);
 }
@@ -65,4 +56,18 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
         console.log(book);
         addBook(book);
     }
+
+    // Clear input fields
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
+    document.querySelector('#rating').value = '';
+
 });
+
+// Delete a book
+function DeleteRowFunction() {
+    // event.target will be the input element.
+    var td = event.target.parentNode;
+    var tr = td.parentNode; // the row to be removed
+    tr.parentNode.removeChild(tr);
+}
